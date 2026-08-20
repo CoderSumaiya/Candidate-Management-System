@@ -57,110 +57,121 @@ The application follows a client-server architecture where the React frontend co
 - Swagger API testing support
 - CORS configuration for frontend-backend communication
 
+
 ## Project Architecture
 
-```
-Candidate-Management-System
+The project follows a client-server architecture where the frontend application communicates with the backend API for managing candidate data.
 
-│
-├── candidate-client
-│   └── React + TypeScript Frontend Application
-│
-└── MasterDetailsApi
-    └── ASP.NET Core Web API Backend Application
-```
+### Frontend Application
+
+- Folder: `candidate-client`
+- Technology: React.js + TypeScript
+- Purpose: Provides the user interface and handles client-side operations.
+
+### Backend Application
+
+- Folder: `MasterDetailsApi`
+- Technology: ASP.NET Core Web API
+- Purpose: Handles API requests, business logic, database operations, and data management.
+
 
 ## Backend Structure
+
+Backend project structure:
 
 ```
 MasterDetailsApi
 
-├── Controllers
-│   ├── CandidatesController
-│   └── SkillsController
-│
-├── Models
-│   └── Entity Models
-│
-├── DTOs
-│   └── Data Transfer Objects
-│
-├── Data
-│   └── AppDbContext
-│
-├── Migrations
-│   └── Entity Framework Core Migration Files
-│
-└── wwwroot
-    └── Images Storage
+Controllers
+- CandidatesController
+- SkillsController
+
+Models
+- Entity Models
+
+DTOs
+- Data Transfer Objects
+
+Data
+- AppDbContext
+
+Migrations
+- Entity Framework Core Migration Files
+
+wwwroot
+- Images Storage
 ```
 
+
 ## Frontend Structure
+
+Frontend project structure:
 
 ```
 candidate-client
 
-├── src
-│
-├── components
-│   ├── CandidateForm
-│   ├── CandidateList
-│   └── NavbarLayout
-│
-├── services
-│   └── API Service Integration
-│
-└── types
-    └── TypeScript Interfaces
+src
+
+components
+- CandidateForm
+- CandidateList
+- NavbarLayout
+
+services
+- API Service Integration
+
+types
+- TypeScript Interfaces
 ```
+
 
 ## Installation & Setup
 
-### Backend Setup
+## Backend Setup
 
 Navigate to backend folder:
 
-```
+```bash
 cd MasterDetailsApi
 ```
 
 Restore required packages:
 
-```
+```bash
 dotnet restore
 ```
 
 Run the API:
 
-```
+```bash
 dotnet run
 ```
 
 Swagger documentation will be available for API testing.
 
----
 
-### Frontend Setup
+## Frontend Setup
 
 Navigate to frontend folder:
 
-```
+```bash
 cd candidate-client
 ```
 
 Install dependencies:
 
-```
+```bash
 npm install
 ```
 
 Run development server:
 
-```
+```bash
 npm run dev
 ```
 
 The React application will start using Vite development server.
+
 
 ## API Controllers
 
@@ -173,6 +184,7 @@ PUT    /api/candidates/{id}
 DELETE /api/candidates/{id}
 ```
 
+
 ### Skill API
 
 ```
@@ -181,6 +193,7 @@ POST   /api/skills
 PUT    /api/skills/{id}
 DELETE /api/skills/{id}
 ```
+
 
 ## Purpose
 
