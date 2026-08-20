@@ -1,61 +1,61 @@
 # Candidate Management System
 
-A full-stack web application built to manage candidate profiles and skills efficiently. The system provides a React-based user interface with an ASP.NET Core Web API backend for managing candidate data through RESTful APIs.
+A full-stack web application built to manage candidate profiles and skills efficiently. The system provides a React-based frontend with an ASP.NET Core Web API backend for managing candidate information through RESTful APIs.
 
 ## Project Overview
 
-Candidate Management System is designed to simplify candidate information management by providing features to create, view, update, and delete candidate records along with their skills.
+Candidate Management System is designed to simplify candidate information management by providing features to create, view, update, and delete candidate records along with their associated skills.
 
-The application follows a client-server architecture where the frontend communicates with the backend API to perform data operations.
+The application follows a client-server architecture where the React frontend communicates with the ASP.NET Core Web API backend for data processing and management.
 
 ## Technology Stack
 
 ### Frontend
 
-* React.js
-* TypeScript
-* Vite
-* Axios
-* Bootstrap 5
-* Bootstrap Icons
-* React Router
+- React.js
+- TypeScript
+- Vite
+- Axios
+- Bootstrap
+- CSS
 
 ### Backend
 
-* ASP.NET Core Web API (.NET 8)
-* C#
-* Entity Framework Core
-* SQL Server
-* Swagger API Documentation
+- ASP.NET Core Web API (.NET 8)
+- C#
+- Entity Framework Core
+- SQL Server
+- Swagger API Documentation
 
 ## Features
 
 ### Candidate Management
 
-* Add new candidates
-* View candidate list
-* Update candidate information
-* Delete candidate records
-* Manage candidate details through REST API
+- Create new candidate records
+- View candidate information
+- Update candidate details
+- Delete candidate records
+- Manage candidate data through RESTful APIs
 
 ### Skill Management
 
-* Create and manage skills
-* Assign skills to candidates
-* Retrieve skill information through API endpoints
+- Create and manage skills
+- Associate skills with candidates
+- Retrieve skill information through API endpoints
 
-### Image Management
+### Image Handling
 
-* Upload and store candidate images
-* Manage uploaded files using backend storage
+- Candidate image storage support
+- Static file handling using backend wwwroot folder
 
 ### API Features
 
-* RESTful API architecture
-* Controller-based API endpoints
-* Entity Framework Core database operations
-* Database migration support
-* Swagger API testing support
+- RESTful API architecture
+- Controller-based API development
+- Entity Framework Core database operations
+- Database migration support
+- Swagger API testing support
+- CORS configuration for frontend-backend communication
 
 ## Project Architecture
 
@@ -64,10 +64,10 @@ Candidate-Management-System
 
 │
 ├── candidate-client
-│   └── React + TypeScript Frontend
+│   └── React + TypeScript Frontend Application
 │
 └── MasterDetailsApi
-    └── ASP.NET Core Web API Backend
+    └── ASP.NET Core Web API Backend Application
 ```
 
 ## Backend Structure
@@ -80,16 +80,19 @@ MasterDetailsApi
 │   └── SkillsController
 │
 ├── Models
-│   └── Candidate Model
+│   └── Entity Models
 │
 ├── DTOs
-│   └── Candidate Data Transfer Objects
+│   └── Data Transfer Objects
 │
 ├── Data
-│   └── Entity Framework DbContext
+│   └── AppDbContext
 │
-└── Migrations
-    └── Database Migration Files
+├── Migrations
+│   └── Entity Framework Core Migration Files
+│
+└── wwwroot
+    └── Images Storage
 ```
 
 ## Frontend Structure
@@ -113,53 +116,53 @@ candidate-client
 
 ## Installation & Setup
 
-### Backend Setup
+## Backend Setup
 
 Navigate to backend folder:
 
-```bash
+```
 cd MasterDetailsApi
 ```
 
 Restore required packages:
 
-```bash
+```
 dotnet restore
 ```
 
-Run the backend API:
+Run the API:
 
-```bash
+```
 dotnet run
 ```
 
-The API will start with Swagger documentation available for API testing.
+Swagger documentation will be available for API testing.
 
 ---
 
-### Frontend Setup
+## Frontend Setup
 
 Navigate to frontend folder:
 
-```bash
+```
 cd candidate-client
 ```
 
 Install dependencies:
 
-```bash
+```
 npm install
 ```
 
 Run development server:
 
-```bash
+```
 npm run dev
 ```
 
 The React application will start using Vite development server.
 
-## API Endpoints
+## API Controllers
 
 ### Candidate API
 
@@ -183,14 +186,15 @@ DELETE /api/skills/{id}
 
 This project demonstrates full-stack development skills including:
 
-* Building modern React applications
-* Creating RESTful APIs using ASP.NET Core
-* Database integration using Entity Framework Core
-* Managing client-server communication
-* Developing CRUD-based business applications
+- Building modern React applications
+- Developing RESTful APIs using ASP.NET Core Web API
+- Database operations using Entity Framework Core
+- SQL Server integration
+- Managing frontend-backend communication
+- Developing CRUD-based business applications
 
 ## Author
 
 **Sumaiya Akter**
 
-Full Stack Developer
+Full Stack .NET Developer
