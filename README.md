@@ -116,7 +116,7 @@ candidate-client
 
 ## Installation & Setup
 
-## Backend Setup
+### Backend Setup
 
 Navigate to backend folder:
 
@@ -140,7 +140,7 @@ Swagger documentation will be available for API testing.
 
 ---
 
-## Frontend Setup
+### Frontend Setup
 
 Navigate to frontend folder:
 
@@ -192,5 +192,3 @@ This project demonstrates full-stack development skills including:
 - SQL Server integration
 - Managing frontend-backend communication
 - Developing CRUD-based business applications
-
-
