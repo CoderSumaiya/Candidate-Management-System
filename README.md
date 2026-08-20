@@ -193,8 +193,4 @@ This project demonstrates full-stack development skills including:
 - Managing frontend-backend communication
 - Developing CRUD-based business applications
 
-## Author
 
-**Sumaiya Akter**
-
-Full Stack .NET Developer
